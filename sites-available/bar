@@ -1,0 +1,8 @@
+server {
+	root /etc/nginx/pages/bar/;
+
+	access_log /var/log/nginx/bar.log;
+	error_log /var/log/nginx/bar_error.log;
+
+	server_name bar;
+}

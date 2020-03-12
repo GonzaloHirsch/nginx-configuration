@@ -1,0 +1,8 @@
+server {
+	root /etc/nginx/pages/foo/;
+
+	access_log /var/log/nginx/foo.log;
+	error_log /var/log/nginx/foo_error.log;
+
+	server_name foo;
+}
