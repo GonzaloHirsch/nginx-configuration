@@ -4,5 +4,7 @@ server {
 	access_log /var/log/nginx/bar.log;
 	error_log /var/log/nginx/bar_error.log;
 
+	gzip on;	
+
 	server_name bar;
 }

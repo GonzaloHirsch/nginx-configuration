@@ -5,4 +5,10 @@ server {
 	error_log /var/log/nginx/foo_error.log;
 
 	server_name foo;
+
+	gzip on;
+
+	location / {
+		proxy_pass http://127.0.0.1:8080;
+	}
 }
